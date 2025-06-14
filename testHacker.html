@@ -364,15 +364,768 @@
       75% { width: 40%; }
       100% { width: 30%; }
     }
+
+    .vertical-scroll-container {
+      overflow: hidden;
+      background: #000;
+      color: #0f0;
+      font-family: monospace;
+      position: relative;
+    }
+
+    .scroll-content {
+      /* display: inline-block; */
+      animation: scroll-vertical 20s linear infinite;
+    }
+
+    .scroll-content2 {
+      /* display: inline-block; */
+      animation: scroll-vertical 20s linear infinite;
+      animation-delay: 20;
+    }
+
+    @keyframes scroll-vertical {
+      0% {
+        transform: translateY(0%);
+      }
+      100% {
+        transform: translateY(-100%);
+      }
+    }
   </style>
 </head>
 <body>
   <div class="screen">
-    <div class="terminal">
-      <!-- <div class="terminal-content blink"></div> -->
+    <!-- <div class="terminal">
       <div class="terminal-content"></div>
-
+    </div> -->
+    <div class="vertical-scroll-container">
+      <div class="scroll-content">
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+      </div>
+      <div class="scroll-content2">
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+        <p>[00:01:45] Beginning lateral movement phase...</p>
+        <p>[00:01:46] Enumerating connected systems...</p>
+        <p>[00:01:47] Discovered hosts...</p>
+        <p>[00:01:48] SMB enumeration started...</p>
+        <p>[00:01:49] Shares found: ADMIN$, shared_docs</p>
+        <p>[00:01:50] Uploading netspy.ps1...</p>
+        <p>[00:01:51] Mounting share to /mnt/tmp...</p>
+        <p>[00:01:52] Running winPEAS...</p>
+        <p>[00:01:53] Domain Admin detected...</p>
+        <p>[00:01:54] Extracting NTDS.dit...</p>
+      </div>
     </div>
+
     <div class="hacker-text">
       <span>1</span>
       <span>0</span>
